@@ -289,4 +289,29 @@ public void practice9() {
 		// 결과 출력
 		System.out.println(Arrays.toString(lotto));
 	}
+	
+	public void practice12() {
+		
+		System.out.print("문자열 : ");
+		String str = sc.nextLine();
+		char[] chr = new char[str.length()];
+		
+		for(int i =0; i < chr.length; i++) {
+			
+			char str1 = str.charAt(i);
+			
+			chr[i] = str1;
+			for(int j =i+1; j < chr.length; j++) {
+				if(chr[i] == chr[j]) {
+					char temp = chr[i];
+					chr[i] =chr[j];
+					chr[j] = temp;
+				}
+			}
+				
+		}
+		
+		System.out.print(Arrays.toString(chr));
+		
+	}
 }
