@@ -7,16 +7,18 @@ public class Student {
    public static final int MAX_VALUE=100;
    
    private String name;					//이름
-   private String studentNumber;
+  private String studentNumber;
    private char gender;
    private int java;
    private int html;
    
-   public Student(String name, String studentNumber, char gender) {
-  	 this.name = name;
-  	 this.studentNumber = studentNumber;
-  	 this.gender = gender;
-   }
+//   public Student(String name, String studentNumber, char gender, int java, int html) {
+//  	 this.name = name;
+//  	 this.studentNumber = studentNumber;
+//  	 this.gender = gender;
+//  	 this.java = java;
+//  	 this.html = html;
+//   }
    
 //   메서드 
    //setter
@@ -35,5 +37,17 @@ public class Student {
   	 this.gender= gender;
    }
    
-   public void set
+   public void setJava(int java) {
+  	 this.java = java;
+   }
+   
+   public void setHtml(int html) {
+  	 this.html = html;
+   }
+   
+   //getter
+   
+   public String getName() {
+  	 return name;
+   }
 }
