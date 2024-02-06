@@ -18,15 +18,16 @@ public class Student {
 				this.gender= gender;
 			}
 			
-			
 			//studentNumber getter/setter
 			//setter
 			public void setStudentNumber(String studentNumber) {
 				this.studentNumber = studentNumber;
 			}
+			
 			public void setName(String name) {
 				this.name = name;
 			}
+			
 			public void setGender(char gender) {
 				this.gender =gender;
 			}
@@ -34,22 +35,18 @@ public class Student {
 			public int getHtml() {
 				return html;
 			}
-
-
+			
 			public void setHtml(int html) {
 				this.html = html;
 			}
-
 
 			public int getCss() {
 				return css;
 			}
 
-
 			public void setCss(int css) {
 				this.css = css;
 			}
-
 
 			public int getJs() {
 				return js;
@@ -84,7 +81,6 @@ public class Student {
 			
 			//객체 .toString() : 객체의 필드를 하나의 문자열로 만들어서 반환
 			public String toString() {
-				
 				//학번 / 성별 / 이름
 				//HTML :100 / CSS : 50 / JS : 70/ Java : 100
 				return String.format("%s / %c / %s\nHTML : %d / CSS : %d / JS : %d / Java %d", 
@@ -94,5 +90,5 @@ public class Student {
 }
 
 //getter / setter 자동 완성
-// alt +[shift] + s -> r (Generated Getsters and Setters...)
+// alt +[shift] + s -> r (Generated Getters and Setters...)
 //select all 클릭 -> Generate 클릭

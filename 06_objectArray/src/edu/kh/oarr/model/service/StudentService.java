@@ -21,7 +21,7 @@ public class StudentService {
 		// students    의 자료형 : Student[] 
 		// students[0] 의 자료형 : Student
 		
-		students[0] = new Student("24001", "최미영", 'F');  
+		students[0] = new Student("24001", "최미영", 'F');    
 		students[1] = new Student("24002", "홍길동", 'M');  
 		students[2] = new Student("24003", "신짱구", 'M');  
 		
@@ -44,7 +44,6 @@ public class StudentService {
 		}
 	}
 	
-	
 	/** 전달 받은 학생 객체(주소)를
 	 * students 객체 배열에서
 	 * 빈칸(null인 칸) 에 대입
@@ -60,7 +59,6 @@ public class StudentService {
 				students[i] = newStd;
 				return true;
 			}
-		
 		return false;
 	}
 	
@@ -88,11 +86,10 @@ public class StudentService {
 		return students[index];
 	}
 	
-
 		/**이름이 일치하는 학생 조회
-		 * @param name 입력 받은 이름
-		 * @return 일치하는 학생정보 또는 null
-		 */
+		 *@param name 입력 받은 이름
+		 *@return 일치하는 학생정보 또는 null
+		 */ 
 		public Student selectName(String name) {
 			//students 객체 배열을 순차 접근 하여 
 			//null이 아니면서 이름이 name과 일치하는 학생 찾기 return
@@ -170,12 +167,12 @@ public class StudentService {
 					continue;
 				}
 				
-				if(maxAvg < avg) {// 기존 최대값 보다 현재 평균이 더 큰 경우
+				if(maxAvg < avg) { // 기존 최대값 보다 현재 평균이 더 큰 경우
 					maxAvg = avg;
 					maxStudent = s;
 				}
 				
-				if(minAvg > avg) {// 기존 최소값 보다 현재 평균이 더 작은 경우
+				if(minAvg > avg) { // 기존 최소값 보다 현재 평균이 더 작은 경우
 					minAvg = avg ;
 					minStudent = s;
 				}
