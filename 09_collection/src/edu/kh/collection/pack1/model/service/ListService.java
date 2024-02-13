@@ -6,6 +6,7 @@ import java.util.Scanner;
 import edu.kh.collection.pack1.model.dto.Book;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 // 컬랙션 프레임워크: Java에서 자료구조를 만들어서 모아둔 것
 //(java.util에 있음)
@@ -29,7 +30,7 @@ public class ListService {
 		// - List (인터페이스) -> 객체 생성 불가능 -> 다형성 이용
 		// - ArrayList (클래스) (List 의 후손)
 //		  List list = new ArrayList(); // 10칸 짜리 생성
-		  List list = new ArrayList(3); // 10칸 짜리 생성
+		  List list = new ArrayList(3); // 3칸 짜리 생성
 		  
 		  // 반환형 메서드명(매개변수)
 		  
@@ -155,13 +156,25 @@ public class ListService {
 	 *  - 추가, 조회, 수정, 제거 구현
 	 */
 	public void bookManage() {
-		List<Book> bookList = new ArrayList<Book>();
+		
+		/*
+		 * ArrayList : 배열 형태 리스트
+		 * 장점: 검색이 빠름 
+		 * 단점 : 중간 삽입, 제거가 느림
+		 * 
+		 * LinkedList : 연결된 형태의 리스트(기차)
+		 * 장점 : 중간 삽입, 제거가 빠름
+		 * 단점: 검색이 느림
+		 */
+//		List<Book> bookList = new ArrayList<Book>();
+		List<Book> bookList = new LinkedList<Book>() ;
 		
 		Scanner sc = new Scanner(System.in);
 		
 		int input = 0; // 메뉴 번호 입력
 		
 		do {
+			
 			System.out.println("-----------------도서 관리 프로그램--------");
 			System.out.println("1.추가");
 			System.out.println("2. 전체 조회");
