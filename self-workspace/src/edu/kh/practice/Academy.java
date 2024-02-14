@@ -1,29 +1,25 @@
 package edu.kh.practice;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class Academy {
 
-	private String name;
-	public Academy() {
+public static void main(String[] args) {
+		List<Integer> numberList =  new ArrayList<Integer>();
 		
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getName() {
-		return name;
-	}
+		numberList.add(1);
+		numberList.add(2);
+		numberList.add(3);
+		numberList.add(2);
+		numberList.add(5);
+		
+		System.out.println(numberList);
+		
+		Set<Integer> numberSet = new HashSet<>();
+		numberSet.addAll(numberList);
+		System.out.println(numberSet);
 }
-
-class Students extends Academy{
-	public void name() {
-	setName("kh");
-	System.out.println(getName());
-	}
-}
-
-class Main {
-	public static void main(String [] args) {
-		Students ac = new Students();
-		ac.name();
-	}
 }
