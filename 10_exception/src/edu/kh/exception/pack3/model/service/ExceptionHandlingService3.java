@@ -34,7 +34,7 @@ public class ExceptionHandlingService3 {
 			throw new RuntimeException(); /* 빨간줄 안뜸, Unchecked exception */
 		}
 		
-		//Checked Exception
+		/*********Checked Exception*********/
 		// RuntimeException, RuntimeException의 자식 제외한 
 		// 나머지 예외 강제 발생
 		else {
