@@ -45,7 +45,7 @@ public class ByteService {
 		BufferedOutputStream bos = null; 
 		
 		try {
-//			 new FileOutputStream("경로"):
+			//	new FileOutputStream("경로"):
 			// -> 경로에 작성된 파일과 연결된 파일 출력 스트림 객체 생성
 			// -> 출력 스트림애 연결된 파일이 존재하지 않으면 자동 생성
 			// (단, 폴더는 생성되지 않음)
@@ -248,7 +248,6 @@ public class ByteService {
 	 * 바이트 기반 파일 입력2
 	 */
 	public void fileByteInput2() {
-		
 		
 		//파일 입력용 바이트 기반 스트림
 		FileInputStream fis = null;
